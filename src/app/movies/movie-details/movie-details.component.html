@@ -1,0 +1,18 @@
+<div class="col-md-4"  style="position:relative; top:30px; left:50px">
+  <div class="panel panel-primary">
+      <div class="panel-heading">
+          <h4 class="text-center">
+              Movie Details</h4>
+      </div>
+
+      <ul class="list-group list-group-flush text-center">
+          <li class="list-group-item"><i class="icon-ok text-primary"></i>ID : {{movie.id}}</li>
+          <li class="list-group-item"><i class="icon-ok text-primary"></i>Name : {{movie.name}}</li>
+          <li class="list-group-item"><i class="icon-ok text-primary"></i>ReleaseDate : {{movie.releaseDate}}</li>
+          <li class="list-group-item"><i class="icon-ok text-primary"></i>Rating : {{movie.rating}}</li>
+          <li class="list-group-item"><i class="icon-ok text-primary"></i>Language : {{movie.language}}</li>
+      </ul>
+    <a class="btn btn-lg btn-block btn-Primary" [routerLink]="['/editmovie', movie.id]" >Edit Movie Detials</a>
+    <a class="btn btn-lg btn-block btn-Primary" [routerLink]="['/movielist']">Back to movie list</a>
+  </div>
+</div>
